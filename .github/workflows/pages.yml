@@ -5,46 +5,37 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# gh-pages branchiga yozish uchun shu yetarli. Pages API (configure-pages)
+# ishlatilmaydi — GITHUB_TOKEN ga Pages sayti yaratish huquqi berilmagan,
+# shuning uchun sayt "Deploy from a branch: gh-pages" rejimida turadi.
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
+  group: gh-pages
   cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-
-      # enablement: true — repo sozlamalarida Pages qoʻlda yoqilmagan boʻlsa ham
-      # workflow uni oʻzi yoqadi va manbani "GitHub Actions" qilib qoʻyadi.
-      - name: Configure Pages
-        id: pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       # Saytga faqat public/ chiqadi: server.js, start.sh va service fayli
       # repoda qoladi, lekin Pages'da ochilmaydi.
       - name: Sayt papkasini tayyorlash
         run: |
+          rm -rf _site
           cp -r public _site
           touch _site/.nojekyll
 
-      # og:image / og:url absolyut boʻlishi shart (Facebook, Telegram preview uchun),
-      # lekin ular repo/domenga bogʻliq. Shuning uchun deploy paytida
-      # configure-pages bergan haqiqiy manzil bilan almashtiriladi — index.html
-      # oʻzgarmaydi va custom domain ulansa ham oʻzi moslashadi.
+      # og:image / og:url absolyut boʻlishi shart (Facebook, Telegram preview
+      # uchun), lekin ular repo nomiga bogʻliq. Shuning uchun deploy paytida
+      # haqiqiy manzil bilan almashtiriladi va index.html oʻzgarmaydi.
+      # Custom domain ulasangiz — BASE_URL ni oʻsha domenga oʻzgartiring.
       - name: og-teglarni sayt manziliga moslash
         env:
-          BASE_URL: ${{ steps.pages.outputs.base_url }}
+          BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
         run: |
           python3 - <<'PY'
           import os, re, io
@@ -61,10 +52,16 @@ jobs:
               raise SystemExit('og teglari topilmadi — index.html oʻzgargan boʻlishi mumkin')
           PY
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: gh-pages branchini yangilash
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          cd _site
+          git init -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "Deploy ${GITHUB_SHA} (${GITHUB_RUN_NUMBER})"
+          git push -qf "https://x-access-token:${TOKEN}@github.com/${REPO}.git" gh-pages
+          echo "gh-pages yangilandi"

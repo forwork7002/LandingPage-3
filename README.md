@@ -7,11 +7,19 @@ Sayt butunlay statik — `public/` papkasi (index.html + img/ + fonts/).
 
 ## Deploy
 
-`main` ga har push boʻlganda `.github/workflows/pages.yml` ishga tushadi:
-`public/` papkasini `_site` ga koʻchiradi, `og:image`/`og:url` teglarini
-saytning haqiqiy manzili bilan almashtiradi va GitHub Pages ga yuklaydi.
-Repo sozlamalarida Pages qoʻlda yoqilmagan boʻlsa ham workflow uni oʻzi yoqadi
-(`configure-pages` → `enablement: true`), manba — «GitHub Actions».
+Sayt **`gh-pages` branchidan** beriladi (Settings → Pages → Deploy from a
+branch: `gh-pages` / root). `main` ga har push boʻlganda
+`.github/workflows/pages.yml` ishga tushadi: `public/` ni `_site` ga
+koʻchiradi, `og:image`/`og:url` teglarini saytning haqiqiy manzili bilan
+almashtiradi va `gh-pages` branchini yangilaydi.
+
+Nega `actions/deploy-pages` emas: bu repoda `GITHUB_TOKEN` ga Pages sayti
+yaratish huquqi yoʻq (`Create Pages site failed: Resource not accessible by
+integration`), shuning uchun branch orqali deploy qilinadi — u faqat
+`contents: write` talab qiladi.
+
+Custom domain ulasangiz, workflow ichidagi `BASE_URL` ni oʻsha domenga
+oʻzgartiring (hozir u repo nomidan avtomatik yigʻiladi).
 
 `server.js`, `start.sh`, `sinolife-landing.service` repoda qoladi, lekin
 saytga chiqmaydi — ular faqat oʻz serveringizda ishlatish uchun.
