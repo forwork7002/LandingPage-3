@@ -1,771 +1,635 @@
 <!doctype html>
 <html lang="uz">
 <head>
+<!-- sinolife-landing build=2 variant=3 -->
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sinolife Collagen 10 000 mg — teri, soch va bo‘g‘imlar uchun dengiz kollageni</title>
-<meta name="description" content="Sinolife Collagen — 10 000 mg gidrolizlangan dengiz kollagen peptidlari, tabiiy kakao va C vitamini. Shakarsiz. Ism va raqamingizni qoldiring — operator qo‘ng‘iroq qiladi.">
-<meta property="og:title" content="Sinolife Collagen 10 000 mg">
-<meta property="og:description" content="Dengiz kollageni, tabiiy kakao va C vitamini. Kuniga bir stakan — teri, soch va bo‘g‘imlar uchun.">
-<meta property="og:image" content="img/og.jpg">
-<!-- og:url deploy paytida haqiqiy sayt manzili bilan almashtiriladi (.github/workflows/pages.yml) -->
-<meta property="og:url" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sinolife Collagen — dengiz kollageni | Buyurtma qoldiring</title>
+<meta name="description" content="Teri, soch va bo‘g‘imlar uchun dengiz kollageni. Ism va raqamingizni qoldiring — operator 15 daqiqa ichida qo‘ng‘iroq qiladi.">
+<meta name="theme-color" content="#F5F8F6">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#F5F0E8">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2730%27 fill=%27%233A2416%27/%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2724%27 fill=%27none%27 stroke=%27%23B9924C%27 stroke-width=%272%27/%3E%3Ctext x=%2732%27 y=%2741%27 text-anchor=%27middle%27 font-family=%27Georgia,serif%27 font-size=%2728%27 fill=%27%23F5F0E8%27%3ES%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Sinolife Collagen — dengiz kollageni | Buyurtma qoldiring">
+<meta property="og:description" content="Teri, soch va bo‘g‘imlar uchun dengiz kollageni. Ism va raqamingizni qoldiring — operator 15 daqiqa ichida qo‘ng‘iroq qiladi.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:url" content="">
+<meta property="og:locale" content="uz_UZ">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E5A50'/%3E%3Cpath d='M19 44c4-16 13-24 27-28-2 14-9 24-27 28z' fill='%23F2FAF7'/%3E%3C/svg%3E">
 <link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
-<!-- PIXEL: Meta Pixel / Yandex Metrika / Google Tag kodini shu yerga qo‘ying -->
 <style>
 @font-face{font-family:"Fraunces";src:url("fonts/fraunces.woff2") format("woff2");font-weight:100 900;font-display:swap}
 @font-face{font-family:"Instrument Sans";src:url("fonts/instrument-sans.woff2") format("woff2");font-weight:400 700;font-display:swap}
-
-:root{
-  --ivory:#F5F0E8;
-  --ivory-2:#ECE4D6;
-  --paper:#FFFCF7;
-  --cocoa:#3A2416;
-  --cocoa-deep:#2B1A11;
-  --bark:#6E4B35;
-  --gold:#B9924C;
-  --gold-2:#D9BF86;
-  --leaf:#4E7752;
-  --line:#E3D9C8;
-  --serif:"Fraunces",Georgia,"Times New Roman",serif;
-  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --shadow:0 28px 56px -28px rgba(58,36,22,.32);
-  --container:1120px;
-  --nav-h:68px;
-}
-
+/* ============ CORE — barcha variantlar uchun umumiy ============ */
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 12px);-webkit-text-size-adjust:100%}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--ivory);color:var(--cocoa);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
-img{display:block;max-width:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:80px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--text);font-size:17px;line-height:1.6;
+  overflow-x:hidden;
+  padding-bottom:calc(76px + env(safe-area-inset-bottom,0px));
+}
+@media (min-width:900px){body{padding-bottom:0}}
+img{max-width:100%;height:auto;display:block}
+[hidden]{display:none!important}
 a{color:inherit}
-h1,h2,h3,p,ul,figure{margin:0}
-ul{padding:0;list-style:none}
-button{font:inherit}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+p{margin:0}
+h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:var(--dw);line-height:1.1;font-style:var(--dstyle,normal)}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:3px}
+::selection{background:var(--accent);color:var(--accent-ink)}
 
-.container{width:min(var(--container),100% - 40px);margin-inline:auto}
-@media (max-width:640px){.container{width:min(var(--container),100% - 32px)}}
+.wrap{width:100%;max-width:var(--maxw,1120px);margin-inline:auto;padding-inline:20px}
+@media (min-width:900px){.wrap{padding-inline:40px}}
+.skip{position:absolute;left:-9999px;background:var(--brand);color:var(--brand-ink);padding:12px 18px;z-index:99}
+.skip:focus{left:8px;top:8px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 
-/* Type */
-h1,h2,.serif{font-family:var(--serif);font-variation-settings:"SOFT" 30,"WONK" 0;font-optical-sizing:auto;font-weight:500;letter-spacing:-.018em}
-h1{font-size:clamp(2.9rem,7.2vw,5.6rem);line-height:.98}
-h2{font-size:clamp(1.95rem,3.8vw,2.85rem);line-height:1.08}
-h3{font-family:var(--sans);font-weight:600;font-size:1.1875rem;line-height:1.3}
-.lead{font-size:1.1875rem;line-height:1.55;color:var(--bark);max-width:60ch}
-.muted{color:var(--bark)}
-.section__h::before{content:"";display:block;width:44px;height:2px;background:var(--gold);margin-bottom:22px}
+/* ---- top bar ---- */
+.bar{position:sticky;top:0;z-index:40;background:var(--bar);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.bar__in{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:58px}
+.bar__brand{font-family:var(--display);font-style:var(--dstyle,normal);font-weight:var(--dw);font-size:21px;line-height:1}
+.bar__brand i{display:block;font:500 10px/1 var(--text);letter-spacing:.2em;color:var(--ink-soft);margin-top:5px;font-style:normal}
+.bar__call{display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:var(--brand);color:var(--brand-ink);font-weight:600;font-size:15px;padding:10px 15px;border-radius:var(--rpill);white-space:nowrap}
+.bar__call svg{width:16px;height:16px;flex:none}
+.bar__call b{display:none;font-weight:600}
+@media (min-width:400px){.bar__call b{display:inline}}
 
-/* Buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 30px;border-radius:999px;border:0;cursor:pointer;text-decoration:none;font-weight:600;font-size:1rem;letter-spacing:.005em;transition:background-color .2s,transform .2s,box-shadow .2s;background:var(--cocoa);color:var(--ivory)}
-.btn:hover{background:var(--cocoa-deep);transform:translateY(-1px)}
-.btn:active{transform:translateY(0)}
-.btn--gold{background:var(--gold);color:var(--cocoa-deep)}
-.btn--gold:hover{background:var(--gold-2)}
-.btn--sm{min-height:42px;padding:0 20px;font-size:.9375rem}
-.btn[disabled]{opacity:.6;cursor:progress;transform:none}
-.textlink{font-weight:600;text-decoration:none;border-bottom:1.5px solid var(--gold-2);padding-bottom:2px;transition:border-color .2s}
-.textlink:hover{border-color:var(--gold)}
-
-/* Nav */
-.nav{position:fixed;inset:0 0 auto 0;z-index:40;height:var(--nav-h);display:flex;align-items:center;transition:background-color .3s,box-shadow .3s}
-.nav--solid{background:rgba(245,240,232,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
-.nav .container{display:flex;align-items:center;justify-content:space-between;gap:24px}
-.wordmark{font-weight:600;letter-spacing:.2em;font-size:.9375rem;text-decoration:none;color:var(--cocoa)}
-.nav__links{display:flex;gap:28px}
-.nav__links a{text-decoration:none;font-size:.9375rem;font-weight:500;color:var(--bark);transition:color .2s}
-.nav__links a:hover{color:var(--cocoa)}
-@media (max-width:899px){.nav__links{display:none}}
-
-/* Hero */
-.hero{position:relative}
-.hero__sticky{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
-.hero__media{position:absolute;top:0;bottom:0;right:0;left:40%;z-index:0;background:var(--ivory)}
-.hero__media img,.hero__media canvas{width:100%;height:100%;object-fit:cover;object-position:50% 50%;-webkit-mask-image:linear-gradient(90deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.3) 16%,rgba(0,0,0,.75) 34%,#000 50%);mask-image:linear-gradient(90deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.3) 16%,rgba(0,0,0,.75) 34%,#000 50%)}
-.hero__media::before{content:"";position:absolute;inset:0;background:rgba(245,240,232,.07)}
-.hero__media::after{content:"";position:absolute;inset:auto 0 0 0;height:24%;background:linear-gradient(to top,var(--ivory) 0%,rgba(245,240,232,0) 100%)}
-.hero__content{position:relative;z-index:1;padding-top:calc(var(--nav-h) + 40px);padding-bottom:40px}
-.hero__text{max-width:560px}
-.hero__content h1{margin-bottom:22px}
-.hero__lead{margin-bottom:34px}
-.hero__actions{display:flex;flex-wrap:wrap;align-items:center;gap:22px 28px;margin-bottom:22px}
-.hero__note{font-size:.9375rem;color:var(--bark);max-width:44ch}
-.facts{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:10px;padding-bottom:40px;margin-top:auto}
-.facts li{display:inline-flex;align-items:center;gap:9px;padding:11px 18px;border-radius:999px;background:rgba(255,252,247,.86);border:1px solid var(--line);font-weight:600;font-size:.9375rem;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
-.facts li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
-
-@media (max-width:899px){
-  .hero__sticky{min-height:0;display:flex;flex-direction:column;overflow:visible}
-  .hero__media{position:relative;inset:auto;left:auto;height:min(66vh,600px);order:0}
-  .hero__media img,.hero__media canvas{object-position:50% 40%;-webkit-mask-image:none;mask-image:none}
-  .hero__media::before{background:linear-gradient(to bottom,var(--ivory) 0%,rgba(245,240,232,0) 22%)}
-  .hero__media::after{height:28%}
-  .facts{order:1;margin-top:-56px;padding-bottom:0}
-  .facts li{padding:10px 15px;font-size:.875rem}
-  .hero__content{order:2;padding-top:28px;padding-bottom:36px}
-  .hero__text{max-width:none}
-  .hero__content h1{margin-bottom:16px}
-  .hero__lead{margin-bottom:26px}
+/* ---- buttons ---- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  width:100%;min-height:56px;padding:15px 22px;
+  font:700 17px/1.2 var(--text);letter-spacing:.005em;
+  background:var(--brand);color:var(--brand-ink);
+  border:0;border-radius:var(--rbtn);cursor:pointer;
+  transition:filter .15s ease,transform .12s ease;
 }
+.btn:hover{filter:brightness(1.08)}
+.btn:active{transform:scale(.985)}
+.btn[disabled]{opacity:.6;cursor:progress}
 
-/* Hero: scroll-driven frame animation (faqat CONFIG.heroFrames.count > 0 bo‘lsa) */
-.hero--frames{height:320vh}
-.hero--frames .hero__sticky{position:sticky;top:0;height:100vh;height:100svh}
-.hero--frames .hero__media img{display:none}
-.hero--frames .hero__content,.hero--frames .facts{transition:opacity .2s linear}
-
-/* Load sequence (bir marta) */
-@media (prefers-reduced-motion:no-preference){
-  .hero__text>*{opacity:0;transform:translateY(16px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
-  .hero__text>*:nth-child(1){animation-delay:.05s}
-  .hero__text>*:nth-child(2){animation-delay:.18s}
-  .hero__text>*:nth-child(3){animation-delay:.3s}
-  .hero__text>*:nth-child(4){animation-delay:.42s}
-  .facts li{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:.6s}
-  .facts li:nth-child(2){animation-delay:.68s}.facts li:nth-child(3){animation-delay:.76s}.facts li:nth-child(4){animation-delay:.84s}
-  .hero__media img{opacity:0;transform:scale(1.035);animation:settle 1.4s cubic-bezier(.2,.7,.2,1) forwards}
-  .hero--frames .hero__text>*,.hero--frames .facts li{animation:none;opacity:1;transform:none}
+/* ---- lead form ---- */
+.lead{background:var(--panel);border:1px solid var(--panel-line);border-radius:var(--rpanel);padding:22px 19px;box-shadow:var(--panel-shadow)}
+@media (min-width:900px){.lead{padding:28px 26px}}
+.lead__h{font-family:var(--display);font-style:var(--dstyle,normal);font-weight:var(--dw);font-size:23px;line-height:1.15;margin-bottom:7px;color:var(--panel-ink)}
+.lead__note{font-size:14.5px;color:var(--panel-soft);margin-bottom:17px}
+.lead__note b{color:var(--panel-ink)}
+.field{display:block;margin-bottom:12px}
+.field span{display:block;font-size:13.5px;font-weight:600;margin-bottom:6px;color:var(--panel-soft)}
+.field input{
+  width:100%;font:400 17px/1.4 var(--text);
+  padding:14px 15px;min-height:52px;
+  border:1.5px solid var(--input-line);border-radius:var(--rinput);
+  background:var(--input-bg);color:var(--panel-ink);
+  transition:border-color .15s,box-shadow .15s;
 }
-@keyframes rise{to{opacity:1;transform:translateY(0)}}
-@keyframes settle{to{opacity:1;transform:scale(1)}}
+.field input::placeholder{color:var(--panel-soft);opacity:.6}
+.field input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px var(--ring)}
+.field input[aria-invalid="true"]{border-color:var(--err)}
+.field em{display:none;font-style:normal;font-size:13px;color:var(--err);margin-top:6px}
+.field input[aria-invalid="true"]~em{display:block}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.lead__legal{font-size:12.5px;color:var(--panel-soft);margin-top:11px;text-align:center;line-height:1.45}
+.lead__err{display:none;font-size:14.5px;color:var(--err);margin-top:10px}
+.lead.is-error .lead__err{display:block}
+.lead__done{display:none;text-align:center;padding:8px 0 4px}
+.lead.is-done .lead__done{display:block}
+.lead.is-done .lead__form,.lead.is-done .lead__h,.lead.is-done .lead__note{display:none}
+.lead__done .tick{width:58px;height:58px;margin:0 auto 15px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;font-size:28px;line-height:1}
+.lead__done h3{font-size:24px;margin-bottom:8px;color:var(--panel-ink)}
+.lead__done p{color:var(--panel-soft);font-size:15.5px}
 
-/* Sections */
-.section{padding:104px 0}
-.section--paper{background:var(--paper)}
-.section--dark{background:var(--cocoa);color:var(--ivory)}
-.section--dark .lead,.section--dark .muted{color:var(--gold-2)}
-.section--dark .section__h::before{background:var(--gold)}
-.section__intro{max-width:640px;margin-bottom:56px}
-.section__intro h2{margin-bottom:18px}
-@media (max-width:899px){.section{padding:72px 0}.section__intro{margin-bottom:40px}}
-
-/* Benefits */
-.benefits__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px 32px}
-.benefit svg{width:52px;height:52px;margin-bottom:18px;color:var(--gold)}
-.benefit h3{margin-bottom:8px}
-.benefit p{color:var(--bark);font-size:1rem}
-@media (max-width:899px){.benefits__grid{grid-template-columns:1fr 1fr;gap:34px 22px}}
-@media (max-width:480px){.benefit svg{width:44px;height:44px}}
-
-/* Two-column media sections */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.split__media{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;background:var(--ivory-2)}
-.split__media img{width:100%;height:100%;object-fit:cover}
-.split__body h2{margin-bottom:16px}
-@media (max-width:899px){
-  .split{grid-template-columns:1fr;gap:36px}
-  .split__media{aspect-ratio:4/3;order:-1}
-}
-
-/* Ingredients */
-.ingredients{margin-top:36px}
-.ingredient{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:26px 0;border-top:1px solid var(--line)}
-.ingredient:last-child{border-bottom:1px solid var(--line)}
-.ingredient__big{font-family:var(--serif);font-variation-settings:"SOFT" 40;font-weight:500;font-size:1.75rem;line-height:1.05;letter-spacing:-.02em;color:var(--cocoa)}
-.ingredient__big small{display:block;font-family:var(--sans);font-size:.8125rem;letter-spacing:0;font-weight:500;color:var(--gold);margin-top:6px}
-.ingredient h3{margin-bottom:6px}
-.ingredient p{color:var(--bark);font-size:1rem}
-@media (max-width:640px){.ingredient{grid-template-columns:1fr;gap:8px}}
-
-/* How to use */
-.steps{margin-top:36px;display:grid;gap:28px}
-.step{display:grid;grid-template-columns:56px 1fr;gap:18px;align-items:start}
-.step__n{font-family:var(--serif);font-variation-settings:"SOFT" 60;font-weight:500;font-size:2.6rem;line-height:1;color:var(--gold);letter-spacing:-.03em}
-.step p{color:var(--bark);font-size:1rem}
-.step h3{margin-bottom:4px}
-.course{margin-top:36px;padding:20px 24px;border-radius:18px;background:var(--paper);border:1px solid var(--line);font-size:.9375rem;color:var(--bark)}
-.course strong{color:var(--cocoa)}
-
-/* Videos */
-.videos__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.video{display:block;position:relative;border-radius:22px;overflow:hidden;background:var(--cocoa-deep);aspect-ratio:16/9;text-decoration:none;color:var(--ivory)}
-.video__thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92;transition:transform .5s cubic-bezier(.2,.7,.2,1),opacity .3s}
-.video:hover .video__thumb{transform:scale(1.03);opacity:1}
-.video__play{position:absolute;left:50%;top:50%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:50%;background:var(--gold);display:grid;place-items:center;box-shadow:0 12px 30px -10px rgba(0,0,0,.6);transition:transform .25s}
-.video:hover .video__play{transform:scale(1.06)}
-.video__play svg{width:26px;height:26px;margin-left:4px;fill:var(--cocoa-deep)}
-.video__title{position:absolute;inset:auto 0 0 0;padding:44px 20px 18px;font-weight:600;font-size:1rem;background:linear-gradient(to top,rgba(43,26,17,.85),rgba(43,26,17,0))}
-.video--empty .video__thumb{display:none}
-.video--empty::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 110%,rgba(185,146,76,.35),transparent 60%)}
-.video--empty .video__play{background:rgba(185,146,76,.55)}
-.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-@media (max-width:899px){.videos__grid{grid-template-columns:1fr;gap:20px}}
-
-/* Reviews */
-.reviews__track{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.review{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:30px 30px 26px;display:flex;flex-direction:column;gap:18px}
-.review__stars{display:flex;gap:3px;color:var(--gold)}
-.review__stars svg{width:16px;height:16px;fill:currentColor}
-.review__text{font-family:var(--serif);font-variation-settings:"SOFT" 30;font-size:1.1875rem;line-height:1.45;font-weight:400;letter-spacing:-.005em;flex:1}
-.review__who{display:flex;align-items:center;gap:14px;font-size:.9375rem}
-.review__avatar{width:42px;height:42px;border-radius:50%;background:var(--ivory-2);color:var(--bark);font-weight:600;display:grid;place-items:center;flex:none}
-.review__who strong{display:block;font-weight:600}
-.review__who span{color:var(--bark)}
-@media (max-width:899px){
-  .reviews__track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 22px;margin:0 -20px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-  .reviews__track::-webkit-scrollbar{display:none}
-  .review{flex:0 0 min(84vw,380px);scroll-snap-align:start}
-}
-@media (max-width:640px){.reviews__track{padding-inline:16px;margin-inline:-16px}}
-
-/* Timeline */
-.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;position:relative;margin-top:16px}
-.timeline::before{content:"";position:absolute;left:0;right:0;top:9px;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-2) 70%,transparent)}
-.milestone{padding-top:32px;position:relative}
-.milestone::before{content:"";position:absolute;top:2px;left:0;width:16px;height:16px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px var(--paper)}
-.milestone__when{font-family:var(--serif);font-variation-settings:"SOFT" 40;font-weight:500;font-size:2.1rem;letter-spacing:-.02em;line-height:1;margin-bottom:12px}
-.milestone p{color:var(--bark);font-size:1rem}
-.timeline__note{margin-top:36px;font-size:.9375rem;color:var(--bark)}
-@media (max-width:899px){
-  .timeline{grid-template-columns:1fr;gap:28px;padding-left:34px}
-  .timeline::before{left:7px;top:0;bottom:0;right:auto;width:2px;height:auto;background:linear-gradient(to bottom,var(--gold),var(--gold-2) 70%,transparent)}
-  .milestone{padding-top:0}
-  .milestone::before{left:-34px;top:8px}
-}
-
-/* FAQ */
-.faq{max-width:760px}
-.faq details{border-top:1px solid var(--line)}
-.faq details:last-child{border-bottom:1px solid var(--line)}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;font-weight:600;font-size:1.0625rem}
+/* ---- faq ---- */
+.faq{display:grid;gap:9px;max-width:780px}
+.faq details{background:var(--panel);border:1px solid var(--panel-line);border-radius:var(--rinput);overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:17px 48px 17px 18px;position:relative;font-weight:600;font-size:16px;line-height:1.4;color:var(--panel-ink)}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"";flex:none;width:12px;height:12px;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(45deg);transition:transform .3s;margin-right:6px}
-.faq details[open] summary::after{transform:rotate(-135deg)}
-.faq details p{padding:0 40px 24px 0;color:var(--bark);font-size:1rem}
+.faq summary::after{content:"";position:absolute;right:20px;top:50%;width:9px;height:9px;border-right:2px solid var(--panel-soft);border-bottom:2px solid var(--panel-soft);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.faq p{padding:0 18px 18px;font-size:15.5px;color:var(--panel-soft)}
 
-/* Order */
-.order .split{align-items:start}
-.order__points{margin-top:32px;display:grid;gap:16px}
-.order__points li{display:grid;grid-template-columns:22px 1fr;gap:14px;align-items:start;color:var(--ivory)}
-.order__points svg{width:22px;height:22px;color:var(--gold);margin-top:2px}
-.order__points strong{display:block;font-weight:600}
-.order__points span{color:var(--gold-2);font-size:.9375rem}
-.form{background:var(--paper);color:var(--cocoa);border-radius:28px;padding:36px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
-.form h3{font-family:var(--serif);font-variation-settings:"SOFT" 30;font-weight:500;font-size:1.6rem;letter-spacing:-.015em;margin-bottom:24px}
-.field{display:block;margin-bottom:18px}
-.field span{display:block;font-size:.9375rem;font-weight:600;margin-bottom:8px}
-.field input{width:100%;min-height:56px;padding:0 18px;border-radius:14px;border:1.5px solid var(--line);background:#fff;font:inherit;font-size:1.0625rem;color:var(--cocoa);transition:border-color .2s,box-shadow .2s}
-.field input::placeholder{color:#B4A48F}
-.field input:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 4px rgba(185,146,76,.18)}
-.field input[aria-invalid="true"]{border-color:#B8483C}
-.field__err{display:none;margin-top:8px;font-size:.875rem;color:#B8483C;font-style:normal}
-.field input[aria-invalid="true"]~.field__err{display:block}
-.form .btn{width:100%;margin-top:6px}
-.form__note{margin-top:16px;font-size:.875rem;color:var(--bark);text-align:center}
-.form__status{display:none;margin-top:16px;padding:14px 16px;border-radius:12px;font-size:.9375rem;background:#FBECEA;color:#8F2E24}
-.form__status--show{display:block}
-.hp{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
-.success{display:none;text-align:center;padding:12px 0 4px}
-.success--show{display:block}
-.success__icon{width:76px;height:76px;margin:0 auto 20px;border-radius:50%;background:var(--ivory);display:grid;place-items:center}
-.success__icon svg{width:36px;height:36px;color:var(--leaf)}
-.success h3{margin-bottom:10px}
-.success p{color:var(--bark)}
-@media (max-width:640px){.form{padding:26px 22px;border-radius:22px}}
+/* ---- footer ---- */
+.foot{background:var(--foot);color:var(--foot-ink);padding-block:38px}
+.foot__grid{display:grid;gap:24px}
+@media (min-width:760px){.foot__grid{grid-template-columns:1.3fr 1fr 1fr}}
+.foot__brand{font-family:var(--display);font-style:var(--dstyle,normal);font-size:25px;margin-bottom:9px}
+.foot p,.foot a,.foot li{font-size:15px;color:var(--foot-soft);text-decoration:none}
+.foot a:hover{color:var(--foot-ink)}
+.foot__list{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.foot__t{font-size:13px;font-weight:700;letter-spacing:.05em;margin-bottom:12px;color:var(--foot-ink)}
+.foot__big{font-family:var(--display);font-style:var(--dstyle,normal);font-size:26px;color:var(--foot-ink)!important}
+.foot__copy{margin-top:28px;padding-top:18px;border-top:1px solid var(--foot-line);font-size:13px;color:var(--foot-soft)}
 
-/* Footer */
-.footer{background:var(--cocoa-deep);color:var(--gold-2);padding:56px 0 36px;font-size:.9375rem}
-.footer .container{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
-.footer .wordmark{color:var(--ivory)}
-.footer__disc{margin-top:18px;max-width:52ch;color:rgba(217,191,134,.75);font-size:.875rem;line-height:1.6}
-.footer__contacts{display:grid;gap:10px;align-content:start}
-.footer__contacts a{text-decoration:none;color:var(--ivory);font-weight:500}
-.footer__contacts a:hover{color:var(--gold-2)}
-.footer__copy{grid-column:1/-1;margin-top:24px;padding-top:24px;border-top:1px solid rgba(217,191,134,.2);font-size:.8125rem;color:rgba(217,191,134,.6)}
-@media (max-width:640px){.footer .container{grid-template-columns:1fr;gap:28px}}
+/* ---- mobile dock ---- */
+.dock{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
+  padding:11px 14px calc(11px + env(safe-area-inset-bottom,0px));
+  background:var(--bar);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-top:1px solid var(--line);
+}
+.dock a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-radius:var(--rbtn);text-decoration:none;font-weight:700;font-size:15.5px}
+.dock .d1{background:var(--brand);color:var(--brand-ink)}
+.dock .d2{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.dock svg{width:18px;height:18px;flex:none}
+@media (min-width:900px){.dock{display:none}}
 
-/* Sticky mobile CTA */
-.stickybar{position:fixed;inset:auto 0 0 0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(245,240,232,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 -1px 0 var(--line);transform:translateY(110%);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
-.stickybar--show{transform:translateY(0)}
-.stickybar .btn{width:100%}
-@media (min-width:900px){.stickybar{display:none}}
+/* ---- price ---- */
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;margin:18px 0 8px}
+.price__now{font-family:var(--display);font-style:var(--dstyle,normal);font-weight:var(--dw);font-size:clamp(32px,8vw,48px);line-height:1}
+.price__cur{font:600 .44em/1 var(--text);color:var(--ink-soft);margin-left:5px}
+.price__old{font-size:19px;color:var(--ink-soft);text-decoration:line-through}
+.price__tag{font:700 13px/1 var(--text);padding:7px 12px;border-radius:var(--rpill);background:var(--accent);color:var(--accent-ink)}
+
+/* ============ 3. DENGIZ — aniq grid, to'g'ri burchak, hairline ============ */
+:root{
+  --bg:#F5F8F6; --bg2:#E8F0EC; --ink:#0F2F2A; --ink-soft:#4C6A63;
+  --line:#CFE0D8; --hair:#C2D7CD;
+  --brand:#0E5A50; --brand-ink:#F2FAF7;
+  --accent:#A9761F; --accent-ink:#FFF8EC;
+  --ok:#2E7D64; --err:#AD4234;
+  --bar:rgba(245,248,246,.93);
+  --panel:#FFFFFF; --panel-line:#CFE0D8; --panel-ink:#0F2F2A; --panel-soft:#4C6A63;
+  --panel-shadow:none;
+  --input-bg:#F5F8F6; --input-line:#C9DCD3; --ring:rgba(14,90,80,.15);
+  --foot:#0A2C27; --foot-ink:#E9F3EF; --foot-soft:rgba(233,243,239,.68); --foot-line:rgba(233,243,239,.16);
+  --display:"Fraunces",Georgia,serif; --text:"Instrument Sans",system-ui,-apple-system,sans-serif;
+  --dw:600;
+  --rpill:4px; --rbtn:4px; --rpanel:2px; --rinput:3px;
+  --maxw:1160px;
+}
+h1,h2,h3{letter-spacing:-.024em}
+[data-rise]{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s cubic-bezier(.22,.8,.3,1)}
+[data-rise].in{opacity:1;transform:none}
+.bar__call{border-radius:4px}
+
+/* ---- hero ---- */
+.hero{border-bottom:1px solid var(--hair)}
+.hero__in{display:grid;gap:0}
+.hero__copy{padding:30px 0 34px}
+.tag{display:inline-block;font:600 12.5px/1 var(--text);letter-spacing:.04em;color:var(--brand);border:1px solid var(--brand);padding:7px 10px;margin-bottom:18px}
+.hero h1{font-size:clamp(31px,8.4vw,58px);margin-bottom:16px;max-width:15ch}
+.hero__sub{font-size:17.5px;color:var(--ink-soft);max-width:46ch;margin-bottom:26px}
+.hero__shot{margin-inline:-20px;border-block:1px solid var(--hair)}
+.hero__shot img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.hero .lead{margin-top:28px}
+@media (min-width:920px){
+  .hero__in{grid-template-columns:1.05fr .95fr;gap:0;align-items:stretch}
+  .hero__copy{padding:64px 48px 64px 0;border-right:1px solid var(--hair)}
+  .hero__right{padding:0 0 0 48px;display:flex;flex-direction:column;justify-content:center;gap:28px;padding-block:48px}
+  .hero__shot{margin-inline:0;border:1px solid var(--hair)}
+  .hero__shot img{aspect-ratio:4/3}
+  .hero .lead{margin-top:0}
+}
+
+/* ---- meta strip ---- */
+.meta{border-bottom:1px solid var(--hair);background:var(--bg2)}
+.meta ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr}
+.meta li{padding:16px 20px;border-bottom:1px solid var(--hair);border-right:1px solid var(--hair)}
+.meta li:nth-child(2n){border-right:0}
+.meta li:nth-last-child(-n+2){border-bottom:0}
+.meta b{display:block;font-family:var(--display);font-size:22px;font-weight:600;color:var(--brand);line-height:1.1}
+.meta span{font-size:13.5px;color:var(--ink-soft)}
+@media (min-width:820px){
+  .meta ul{grid-template-columns:repeat(4,1fr);max-width:var(--maxw);margin-inline:auto;padding-inline:40px}
+  .meta li{border-bottom:0;padding:22px 24px}
+  .meta li:first-child{padding-left:0}
+  .meta li:last-child{border-right:0}
+}
+
+/* ---- sections ---- */
+.sec{padding-block:52px}
+@media (min-width:900px){.sec{padding-block:84px}}
+.sec--tint{background:var(--bg2);border-block:1px solid var(--hair)}
+.sec__head{margin-bottom:30px;max-width:40ch}
+.sec__h{font-size:clamp(26px,6.8vw,42px);margin-bottom:11px}
+.sec__lead{font-size:16.5px;color:var(--ink-soft)}
+
+/* ---- grid cards ---- */
+.grid3{display:grid;border-top:1px solid var(--hair);border-left:1px solid var(--hair)}
+.grid3 article{padding:26px 22px;border-bottom:1px solid var(--hair);border-right:1px solid var(--hair);background:#fff}
+.grid3 h3{font-size:21px;margin-bottom:9px}
+.grid3 p{font-size:15.5px;color:var(--ink-soft);line-height:1.55}
+.grid3 svg{width:34px;height:34px;color:var(--brand);margin-bottom:14px}
+@media (min-width:820px){.grid3{grid-template-columns:repeat(3,1fr)}}
+
+/* ---- steps ---- */
+.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--hair);border-left:1px solid var(--hair)}
+.steps li{counter-increment:s;padding:24px 22px;border-bottom:1px solid var(--hair);border-right:1px solid var(--hair);background:#fff}
+.steps li::before{content:counter(s,decimal-leading-zero);display:block;font:600 13px/1 var(--text);letter-spacing:.08em;color:var(--accent);margin-bottom:12px}
+.steps h3{font-size:19px;margin-bottom:6px}
+.steps p{font-size:15.5px;color:var(--ink-soft)}
+@media (min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+
+/* ---- band ---- */
+.band{position:relative;overflow:hidden;border-block:1px solid var(--hair)}
+.band img{width:100%;height:clamp(280px,46vw,440px);object-fit:cover;object-position:center 32%}
+.band__over{position:absolute;inset:0;display:flex;align-items:flex-end;padding:24px 20px;background:linear-gradient(to top,rgba(10,44,39,.8),rgba(10,44,39,.05) 62%)}
+.band__over p{color:#E9F3EF;font-family:var(--display);font-size:clamp(20px,5vw,34px);line-height:1.2;max-width:24ch}
+@media (min-width:900px){.band__over{padding:48px 40px}}
+
+/* ---- reviews ---- */
+.grid3--q article{display:flex;flex-direction:column;gap:11px}
+.grid3--q .stars{color:var(--accent);letter-spacing:3px;font-size:15px}
+.grid3--q cite{font-style:normal;font-size:13.5px;color:var(--ink-soft);margin-top:auto}
+
+/* ---- offer ---- */
+.offer{background:#0A2C27;color:#E9F3EF;border-block:1px solid #0A2C27}
+.offer .sec__h,.offer .price__now{color:#E9F3EF}
+.offer .sec__lead,.offer .price__cur,.offer .price__old{color:rgba(233,243,239,.72)}
+.offer__grid{display:grid;gap:28px}
+@media (min-width:960px){.offer__grid{grid-template-columns:1fr 1fr;gap:56px;align-items:center}}
+.plus{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:11px}
+.plus li{display:flex;gap:12px;font-size:16px;color:rgba(233,243,239,.88)}
+.plus svg{width:20px;height:20px;flex:none;margin-top:3px;color:#D9AE5F}
+.offer .lead{--panel:#0F3A33;--panel-line:rgba(233,243,239,.2);--panel-ink:#E9F3EF;--panel-soft:rgba(233,243,239,.7);--input-bg:#0A2C27;--input-line:rgba(233,243,239,.24);--brand:#D9AE5F;--brand-ink:#0A2C27}
+
 </style>
 </head>
 <body>
+<a class="skip" href="#buyurtma">Buyurtma formasiga o‘tish</a>
 
-<header class="nav" id="nav">
-  <div class="container">
-    <a class="wordmark" href="#top">SINOLIFE</a>
-    <nav class="nav__links" aria-label="Bo‘limlar">
-      <a href="#foyda">Foydasi</a>
-      <a href="#tarkib">Tarkibi</a>
-      <a href="#video">Videolar</a>
-      <a href="#fikrlar">Fikrlar</a>
-      <a href="#savollar">Savollar</a>
-    </nav>
-    <a class="btn btn--sm" href="#buyurtma">Buyurtma berish</a>
+<header class="bar">
+  <div class="wrap bar__in">
+    <span class="bar__brand">Sinolife<i>NATURAL</i></span>
+    <a class="bar__call" data-tel href="tel:+998555004656">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      <b data-phone>55 500 46 56</b>
+    </a>
   </div>
 </header>
 
-<main id="top">
-
-  <section class="hero" id="hero">
-    <div class="hero__sticky">
-      <div class="hero__media" id="heroMedia">
-        <picture>
-          <source media="(max-width: 899px)" srcset="img/hero-mobile.webp">
-          <img src="img/hero.webp" alt="Sinolife Collagen 10 000 mg bankasi, apelsin po‘sti va kakao donalari" fetchpriority="high" width="1672" height="941">
-        </picture>
-        <canvas id="heroCanvas" hidden aria-hidden="true"></canvas>
+<main>
+  <section class="hero">
+    <div class="wrap hero__in">
+      <div class="hero__copy">
+        <span class="tag">Sinolife Collagen 10 000 mg</span>
+        <h1>Teri, soch va bo‘g‘imlar uchun dengiz kollageni</h1>
+        <p class="hero__sub">Har kunlik bir porsiya. Ism va raqamingizni qoldiring — operator 15 daqiqa ichida qo‘ng‘iroq qilib narx va yetkazishni aytadi.</p>
+        <figure class="hero__shot" data-rise>
+          <img src="img/hero.webp" alt="Sinolife Collagen 10 000 mg bankasi" width="1672" height="941" fetchpriority="high">
+        </figure>
       </div>
-      <div class="hero__content container" id="heroContent"><div class="hero__text">
-        <h1>Go‘zallik ichkaridan boshlanadi</h1>
-        <p class="lead hero__lead">Sinolife Collagen — kuniga bir stakan. 10 000 mg gidrolizlangan dengiz kollageni, tabiiy kakao va C vitamini teringiz, sochingiz va bo‘g‘imlaringiz uchun.</p>
-        <div class="hero__actions">
-          <a class="btn" href="#buyurtma">Buyurtma berish</a>
-          <a class="textlink" href="#tarkib">Tarkibini ko‘rish</a>
+      <div class="hero__right">
+        <div class="lead" id="buyurtma">
+          
+          <h2 class="lead__h">Buyurtma qoldiring</h2>
+          <p class="lead__note">Ism va raqamingizni yozing — operatorimiz <b>15 daqiqa ichida</b> qo‘ng‘iroq qiladi, narx va yetkazishni aytadi.</p>
+          <form class="lead__form" data-lead data-place="hero" novalidate>
+            <label class="field">
+              <span>Ismingiz</span>
+              <input type="text" name="name" autocomplete="given-name" placeholder="Masalan, Dilnoza" maxlength="60" required>
+              <em>Ismingizni yozing</em>
+            </label>
+            <label class="field">
+              <span>Telefon raqamingiz</span>
+              <input type="tel" name="phone" autocomplete="tel" inputmode="numeric" placeholder="+998 90 123 45 67" required>
+              <em>Raqamni to‘liq yozing: +998 va 9 ta raqam</em>
+            </label>
+            <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn" type="submit">Qo‘ng‘iroqni kutaman</button>
+            <p class="lead__err" role="alert"></p>
+            <p class="lead__legal">Raqamingiz faqat shu buyurtma uchun ishlatiladi.</p>
+          </form>
+          <div class="lead__done">
+            <div class="tick">✓</div>
+            <h3>Qabul qilindi</h3>
+            <p>Operatorimiz 15 daqiqa ichida qo‘ng‘iroq qiladi. Telefoningizni yoningizda saqlang.</p>
+          </div>
         </div>
-        <p class="hero__note" data-callback>Ism va raqamingizni qoldirasiz — operatorimiz qo‘ng‘iroq qilib, narx va yetkazib berishni kelishib oladi.</p>
-      </div></div>
-      <ul class="facts container" id="facts" aria-label="Asosiy faktlar">
-        <li>10 000 mg kollagen</li>
-        <li>Dengiz peptidlari</li>
-        <li>C vitamini bilan</li>
-        <li>Shakarsiz</li>
-      </ul>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="foyda">
-    <div class="container">
-      <div class="section__intro">
-        <h2 class="section__h">Nima uchun kollagen kerak?</h2>
-        <p class="lead">Kollagen — teri, soch, tirnoq va bo‘g‘imlarning asosiy oqsili. 25 yoshdan keyin organizm uni har yili taxminan 1% ga kamroq ishlab chiqaradi. Sinolife shu yetishmovchilikni har kuni to‘ldirib boradi.</p>
+  <section class="meta">
+    <ul>
+      <li><b>10 000 mg</b><span>bir porsiyada</span></li>
+      <li><b>15 daqiqa</b><span>qo‘ng‘iroq kutish</span></li>
+      <li><b>Bepul</b><span>mutaxassis maslahati</span></li>
+      <li><b>Qo‘lga olib</b><span>to‘lash mumkin</span></li>
+    </ul>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec__head" data-rise>
+        <h2 class="sec__h">Nimaga ta’sir qiladi</h2>
+        <p class="sec__lead">Uchta asosiy yo‘nalish. Qolgan savollarni qo‘ng‘iroqda so‘rang.</p>
       </div>
-      <div class="benefits__grid">
-        <div class="benefit">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 6c6 8 12 14.5 12 22a12 12 0 0 1-24 0c0-7.5 6-14 12-22Z"/><path d="M18 30a6 6 0 0 0 6 6"/></svg>
+      <div class="grid3" data-rise>
+        <article>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.2-9A5.4 5.4 0 0 1 12 6.6 5.4 5.4 0 0 1 21.2 12C19 16.4 12 21 12 21z"/></svg>
           <h3>Teri</h3>
-          <p>Namlik va elastiklik qaytadi, mayda ajinlar kamroq ko‘zga tashlanadi.</p>
-        </div>
-        <div class="benefit">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12c6-6 10 6 16 0s10 6 16 0"/><path d="M8 24c6-6 10 6 16 0s10 6 16 0"/><path d="M8 36c6-6 10 6 16 0s10 6 16 0"/></svg>
-          <h3>Soch</h3>
-          <p>Ildizdan mustahkam, kamroq to‘kiladi, tabiiy yaltiraydi.</p>
-        </div>
-        <div class="benefit">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 42V17a9 9 0 0 1 18 0v25"/><path d="M19.5 15.5a4.5 4.5 0 0 1 9 0v11a4.5 4.5 0 0 1-9 0z"/></svg>
-          <h3>Tirnoq</h3>
-          <p>Sinmaydigan, tekis va sog‘lom tirnoqlar.</p>
-        </div>
-        <div class="benefit">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 10a5 5 0 1 1 5 5l13 13a5 5 0 1 1-5 5L12 20a5 5 0 1 1 0-10Z"/><path d="M31 33a5 5 0 1 0 5-5"/></svg>
+          <p>Namlik va elastiklik — ayollar birinchi sezadigan o‘zgarish.</p>
+        </article>
+        <article>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-7 4-13 8-16 1 4 4 6 4 10a6 6 0 0 1-12 6z"/><path d="M8 20c0-4 2-7 4-9"/></svg>
+          <h3>Soch va tirnoq</h3>
+          <p>Soch tolasi mustahkamroq, tirnoq sinishi kamayadi.</p>
+        </article>
+        <article>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v5a5 5 0 0 0 10 0V4"/><path d="M7 20v-5a5 5 0 0 1 10 0v5"/><path d="M5 4h4M15 4h4M5 20h4M15 20h4"/></svg>
           <h3>Bo‘g‘imlar</h3>
-          <p>Tog‘aylar uchun qurilish materiali — harakat yengilroq bo‘ladi.</p>
+          <p>Harakatda yengillik — ayniqsa 35 dan keyin.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-label="Mahsulot surati">
+    <img src="img/lifestyle.webp" alt="Sinolife Collagen bankasi va kakao ichimligi" width="896" height="1200" loading="lazy">
+    <div class="band__over"><p>Kuniga bir porsiya — oddiy odat, uzoq natija</p></div>
+  </section>
+
+  <section class="sec sec--tint">
+    <div class="wrap">
+      <div class="sec__head" data-rise>
+        <h2 class="sec__h">Buyurtma qanday boradi</h2>
+        <p class="sec__lead">Uch qadam, bir daqiqa vaqtingiz.</p>
+      </div>
+      <ol class="steps" data-rise>
+        <li><h3>Raqamingizni qoldirasiz</h3><p>Formada faqat ism va telefon. Boshqa hech narsa kerak emas.</p></li>
+        <li><h3>Operator qo‘ng‘iroq qiladi</h3><p>15 daqiqa ichida. Narx, aksiya va yetkazish muddatini aytadi.</p></li>
+        <li><h3>Qo‘lga olib to‘laysiz</h3><p>Kuryer yoki pochta orqali. Oldindan pul o‘tkazish shart emas.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec__head" data-rise><h2 class="sec__h">Mijozlarimiz nima deydi</h2></div>
+      <div class="grid3 grid3--q" data-rise>
+        <article><div class="stars" aria-label="5 dan 5">★★★★★</div><p>Operator qo‘ng‘iroq qilib hammasini tushuntirdi, ertasiga kuryer keldi.</p><cite>Nigora, Toshkent</cite></article>
+        <article><div class="stars" aria-label="5 dan 5">★★★★★</div><p>Ikkinchi marta buyurtma berayapman. Terim yaxshilandi, atrofdagilar sezishdi.</p><cite>Mohira, Samarqand</cite></article>
+        <article><div class="stars" aria-label="5 dan 5">★★★★★</div><p>Onamga oldim. Yetkazishdi, pulni qo‘lga berdim — hammasi oson.</p><cite>Sardor, Farg‘ona</cite></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec offer">
+    <div class="wrap offer__grid">
+      <div data-rise>
+        <h2 class="sec__h">Qo‘ng‘iroqni buyurtma qiling</h2>
+        <div class="price" data-price-box hidden>
+          <span class="price__now"><span data-price></span><span class="price__cur">so‘m</span></span>
+          <span class="price__old" data-price-old hidden></span>
+          <span class="price__tag" data-price-tag hidden></span>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--paper" id="tarkib">
-    <div class="container split">
-      <figure class="split__media">
-        <img src="img/cocoa.webp" alt="Sinolife Collagen bankasi kakao kukuni va kakao donalari bilan" loading="lazy" width="1672" height="941" style="object-position:50% 55%">
-      </figure>
-      <div class="split__body">
-        <h2 class="section__h">Uch tarkib. Ortiqcha hech narsa yo‘q.</h2>
-        <p class="lead">Kollagen ishlashi uchun kerak bo‘lgan narsalarning o‘zi — va mazali bo‘lishi uchun kakao.</p>
-        <div class="ingredients">
-          <div class="ingredient">
-            <div class="ingredient__big">10 000 mg<small>bir porsiyada</small></div>
-            <div>
-              <h3>Gidrolizlangan dengiz kollageni</h3>
-              <p>Baliqdan olingan kollagen mayda peptidlarga bo‘lingan, shuning uchun organizm uni tez va to‘liq o‘zlashtiradi. Bu — kollagenning eng yaxshi so‘riladigan turi.</p>
-            </div>
-          </div>
-          <div class="ingredient">
-            <div class="ingredient__big">0 g shakar<small>tarkibida</small></div>
-            <div>
-              <h3>Tabiiy kakao</h3>
-              <p>Ta’m shakar bilan emas, kakao bilan berilgan. Antioksidantlarga boy, ichimlik yengil shokolad ta’mida bo‘ladi.</p>
-            </div>
-          </div>
-          <div class="ingredient">
-            <div class="ingredient__big">C vitamini<small>sintez uchun</small></div>
-            <div>
-              <h3>Kollagenning “yordamchisi”</h3>
-              <p>Organizm kollagenni C vitaminisiz sintez qila olmaydi. Shuning uchun u tarkibda — kollagen shunchaki ichilmaydi, ishlaydi.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="qollash">
-    <div class="container split">
-      <div class="split__body">
-        <h2 class="section__h">Qanday ichiladi?</h2>
-        <p class="lead">Bir daqiqa — va kunlik porsiya tayyor.</p>
-        <div class="steps">
-          <div class="step">
-            <div class="step__n">1</div>
-            <div><h3>Bir o‘lchov qoshiq kukun</h3><p>Banka ichidagi o‘lchov qoshiq bilan bir porsiyani stakanga soling.</p></div>
-          </div>
-          <div class="step">
-            <div class="step__n">2</div>
-            <div><h3>200 ml iliq suv yoki sut</h3><p>Aralashtiring — kukun tez eriydi, quyqa qolmaydi.</p></div>
-          </div>
-          <div class="step">
-            <div class="step__n">3</div>
-            <div><h3>Har kuni, bir vaqtda</h3><p>Ertalab kofe o‘rniga yoki kechqurun — o‘zingizga qulay vaqtda iching.</p></div>
-          </div>
-        </div>
-        <p class="course"><strong>Kurs:</strong> kamida 1 oy. Barqaror natija uchun 3 oylik kurs tavsiya etiladi — bir banka 30 kunga yetadi.</p>
-      </div>
-      <figure class="split__media">
-        <img src="img/lifestyle.webp" alt="Stakanda tayyor Sinolife Collagen ichimligi" loading="lazy" width="896" height="1200">
-      </figure>
-    </div>
-  </section>
-
-  <section class="section section--dark" id="video">
-    <div class="container">
-      <div class="section__intro">
-        <h2 class="section__h">Videolarda ko‘ring</h2>
-        <p class="lead">Mahsulot haqida, tayyorlash usuli va mijozlarimizning hikoyalari.</p>
-      </div>
-      <div class="videos__grid" id="videos"></div>
-    </div>
-  </section>
-
-  <section class="section" id="fikrlar">
-    <div class="container">
-      <div class="section__intro">
-        <h2 class="section__h">Mijozlarimiz nima deydi</h2>
-        <p class="lead">Sinolife Collagen ichayotgan ayollarning o‘z so‘zlari.</p>
-      </div>
-      <div class="reviews__track" id="reviews"></div>
-    </div>
-  </section>
-
-  <section class="section section--paper" id="natija">
-    <div class="container">
-      <div class="section__intro">
-        <h2 class="section__h">Natijani qachon sezasiz?</h2>
-        <p class="lead">Kollagen dori emas, ozuqa: organizm uni to‘plab, asta-sekin ishlatadi. Odatda o‘zgarishlar shu tartibda keladi.</p>
-      </div>
-      <div class="timeline">
-        <div class="milestone">
-          <div class="milestone__when">2–3 hafta</div>
-          <p>Teri namlanadi, yuz rangi tetiklashadi. Ichimlik odat tusiga kiradi.</p>
-        </div>
-        <div class="milestone">
-          <div class="milestone__when">4–6 hafta</div>
-          <p>Tirnoq kamroq sinadi, soch to‘kilishi kamayadi va yaltiraydi.</p>
-        </div>
-        <div class="milestone">
-          <div class="milestone__when">8–12 hafta</div>
-          <p>Teri elastikligi seziladi, mayda ajinlar silliqlashadi, bo‘g‘imlar yengil harakatlanadi.</p>
-        </div>
-      </div>
-      <p class="timeline__note">Muddatlar organizmga, yoshga va turmush tarziga qarab farq qiladi.</p>
-    </div>
-  </section>
-
-  <section class="section" id="savollar">
-    <div class="container">
-      <div class="section__intro">
-        <h2 class="section__h">Ko‘p so‘raladigan savollar</h2>
-      </div>
-      <div class="faq">
-        <details>
-          <summary>Narxi qancha?</summary>
-          <p>Narx va joriy aksiyani operator qo‘ng‘iroq qilganda aytadi. Buyurtma qoldirish hech qanday majburiyat yuklamaydi — savol berib, keyin qaror qilishingiz mumkin.</p>
-        </details>
-        <details>
-          <summary>Yetkazib berish qanday?</summary>
-          <p>O‘zbekistonning barcha viloyatlariga yetkazib beramiz. To‘lov — mahsulotni qo‘lingizga olganingizda. Muddat va shartlarni operator aniqlashtiradi.</p>
-        </details>
-        <details>
-          <summary>Kimga mos keladi?</summary>
-          <p>18 yoshdan katta ayollar va erkaklar uchun. Homiladorlik va emizish davrida, shuningdek surunkali kasalliklarda qo‘llashdan oldin shifokor bilan maslahatlashing.</p>
-        </details>
-        <details>
-          <summary>Qancha vaqt ichish kerak?</summary>
-          <p>Kamida 1 oy — organizm kollagenni to‘plashi uchun vaqt kerak. Barqaror natija uchun 3 oylik kurs tavsiya etiladi.</p>
-        </details>
-        <details>
-          <summary>Ta’mi qanday?</summary>
-          <p>Yengil shokolad ta’mi — tarkibidagi tabiiy kakao tufayli. Shakar qo‘shilmagan, baliq hidi yo‘q.</p>
-        </details>
-        <details>
-          <summary>Bir banka necha kunga yetadi?</summary>
-          <p>Kuniga bir o‘lchov qoshiqdan ichilganda — 30 kunga.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--dark order" id="buyurtma">
-    <div class="container split">
-      <div class="split__body">
-        <h2 class="section__h">Buyurtma qoldiring</h2>
-        <p class="lead">Ismingiz va raqamingiz yetarli. Operatorimiz qo‘ng‘iroq qilib, savollaringizga javob beradi va yetkazib berishni kelishib oladi.</p>
-        <ul class="order__points">
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
-            <div><strong>Narx va aksiya — qo‘ng‘iroqda</strong><span data-callback>Operator ish vaqtida tez orada bog‘lanadi.</span></div>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
-            <div><strong>Butun O‘zbekiston bo‘ylab yetkazib beramiz</strong><span>To‘lov — mahsulotni olganingizda.</span></div>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg>
-            <div><strong>Ma’lumotlaringiz maxfiy</strong><span>Raqamingiz faqat qo‘ng‘iroq uchun ishlatiladi.</span></div>
-          </li>
+        <p class="sec__lead" data-price-note>Aniq narx, joriy aksiya va yetkazish muddatini operator qo‘ng‘iroqda aytadi.</p>
+        <ul class="plus">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Oldindan to‘lov kerak emas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Butun O‘zbekiston bo‘ylab yetkazish</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Mutaxassis bilan bepul maslahat</li>
         </ul>
       </div>
-
-      <div class="form" id="formCard">
-        <form id="leadForm" novalidate>
-          <h3>Sinolife Collagen buyurtma qilish</h3>
-          <label class="field">
-            <span>Ismingiz</span>
-            <input type="text" name="name" id="name" autocomplete="name" placeholder="Masalan, Dilnoza" maxlength="60" required>
-            <em class="field__err">Ismingizni kiriting.</em>
-          </label>
-          <label class="field">
-            <span>Telefon raqamingiz</span>
-            <input type="tel" name="phone" id="phone" autocomplete="tel" inputmode="numeric" placeholder="+998 __ ___ __ __" required>
-            <em class="field__err">Raqamni to‘liq kiriting: +998 va 9 ta raqam.</em>
-          </label>
-          <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-          <button class="btn btn--gold" type="submit" id="submitBtn">Buyurtma berish</button>
-          <p class="form__note">Buyurtma majburiyat yuklamaydi — operator bilan gaplashib, keyin qaror qilasiz.</p>
-          <div class="form__status" id="formStatus" role="alert"></div>
-        </form>
-        <div class="success" id="success" aria-live="polite">
-          <div class="success__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
-          <h3>Buyurtmangiz qabul qilindi</h3>
-          <p id="successText">Rahmat! Operatorimiz tez orada qo‘ng‘iroq qiladi. Telefoningizni yoningizda tuting.</p>
-        </div>
+      <div class="lead" data-rise>
+        
+          <h2 class="lead__h">Operator sizga qo‘ng‘iroq qilsinmi?</h2>
+          <p class="lead__note">Raqamingizni qoldiring — <b>15 daqiqa ichida</b> bog‘lanamiz.</p>
+          <form class="lead__form" data-lead data-place="offer" novalidate>
+            <label class="field">
+              <span>Ismingiz</span>
+              <input type="text" name="name" autocomplete="given-name" placeholder="Masalan, Dilnoza" maxlength="60" required>
+              <em>Ismingizni yozing</em>
+            </label>
+            <label class="field">
+              <span>Telefon raqamingiz</span>
+              <input type="tel" name="phone" autocomplete="tel" inputmode="numeric" placeholder="+998 90 123 45 67" required>
+              <em>Raqamni to‘liq yozing: +998 va 9 ta raqam</em>
+            </label>
+            <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn" type="submit">Qo‘ng‘iroqni kutaman</button>
+            <p class="lead__err" role="alert"></p>
+            <p class="lead__legal">Raqamingiz faqat shu buyurtma uchun ishlatiladi.</p>
+          </form>
+          <div class="lead__done">
+            <div class="tick">✓</div>
+            <h3>Qabul qilindi</h3>
+            <p>Operatorimiz 15 daqiqa ichida qo‘ng‘iroq qiladi. Telefoningizni yoningizda saqlang.</p>
+          </div>
       </div>
     </div>
   </section>
 
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec__head" data-rise><h2 class="sec__h">Ko‘p so‘raladigan savollar</h2></div>
+      <div class="faq">
+        <details><summary>Buyurtma qanday rasmiylashtiriladi?</summary><p>Ism va raqamingizni qoldirasiz. Operator qo‘ng‘iroq qilib manzil va qulay vaqtni aniqlaydi — boshqa hech narsa kerak emas.</p></details>
+        <details><summary>To‘lovni qachon qilaman?</summary><p>Mahsulotni qo‘lingizga olganingizda to‘laysiz. Oldindan pul o‘tkazish shart emas.</p></details>
+        <details><summary>Viloyatlarga yetkazasizmi?</summary><p>Ha, O‘zbekistonning barcha hududlariga yetkazib beramiz. Muddat va narxni operator aytadi.</p></details>
+        <details><summary>Menga mos keladimi?</summary><p>Buni qo‘ng‘iroqda aniqlaymiz: mutaxassisimiz savollaringizga javob beradi va mos variantni tanlashga yordam beradi. Maslahat bepul.</p></details>
+        <details><summary>Qo‘ng‘iroqni o‘tkazib yuborsam-chi?</summary><p>Xavotir olmang — biz yana bir necha marta bog‘lanamiz yoki o‘zingiz <a data-tel href="tel:+998555004656"><b data-phone>55 500 46 56</b></a> raqamiga qo‘ng‘iroq qilishingiz mumkin.</p></details>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer class="footer">
-  <div class="container">
-    <div>
-      <a class="wordmark" href="#top">SINOLIFE</a>
-      <p class="footer__disc">Sinolife Collagen — biologik faol qo‘shimcha. Dori vositasi emas. Qo‘llashdan oldin mutaxassis bilan maslahatlashing. Tarkibiga individual sezgirlik bo‘lsa, ichmang.</p>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <div class="foot__brand">Sinolife</div>
+        <p>Tabiiy mahsulotlar. O‘zbekiston bo‘ylab yetkazib berish, to‘lov qo‘lga olganda.</p>
+      </div>
+      <div>
+        <div class="foot__t">Bog‘lanish</div>
+        <ul class="foot__list">
+          <li><a class="foot__big" data-tel href="tel:+998555004656"><span data-phone>55 500 46 56</span></a></li>
+          <li>Har kuni 9:00 – 21:00</li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot__t">Ijtimoiy tarmoqlar</div>
+        <ul class="foot__list">
+          <li><a data-ig href="https://instagram.com/sinolifeuz" target="_blank" rel="noopener">Instagram — @sinolifeuz</a></li>
+          <li><a data-tg href="https://t.me/sinolife_manager" target="_blank" rel="noopener">Telegram — @sinolife_manager</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer__contacts" id="contacts"></div>
-    <div class="footer__copy">© <span id="year"></span> Sinolife. Barcha huquqlar himoyalangan.</div>
+    <div class="foot__copy">© <span data-year>2026</span> Sinolife. Mahsulot dori vositasi emas.</div>
   </div>
 </footer>
 
-<div class="stickybar" id="stickybar">
-  <a class="btn" href="#buyurtma">Buyurtma berish</a>
+<div class="dock">
+  <a class="d1" data-tel href="tel:+998555004656">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    Qo‘ng‘iroq
+  </a>
+  <a class="d2" href="#buyurtma">Buyurtma qoldirish</a>
 </div>
 
 <script>
-/* =========================================================
-   SOZLAMALAR — faqat shu blokni tahrirlang
-   ========================================================= */
-const CONFIG = {
-  // Ko‘rsatiladigan telefon va aloqa havolalari
-  phone: '+998 71 200 00 00',
-  phoneLink: '+998712000000',
-  telegram: 'https://t.me/sinolife',
-  instagram: 'https://instagram.com/sinolife',
-
-  // Operator qachon qo‘ng‘iroq qiladi (hero va buyurtma bo‘limida ko‘rsatiladi)
-  callbackText: 'Operator ish vaqtida 15 daqiqa ichida qo‘ng‘iroq qiladi.',
-
-  // Buyurtma yuboriladigan manzil (server.js → Bitrix24). O‘zgartirmang, agar server boshqa domenda bo‘lmasa.
-  leadEndpoint: '/api/lead',
-
-  // YouTube videolar: id = youtube.com/watch?v=XXXXXXXXXXX dagi XXXXXXXXXXX
-  videos: [
-    { id: '', title: 'Sinolife Collagen haqida' },
-    { id: '', title: 'Qanday tayyorlanadi' },
-    { id: '', title: 'Mijozlarimiz hikoyasi' }
-  ],
-
-  // Mijozlar fikri. NAMUNA — haqiqiy fikrlarga almashtiring!
-  reviews: [
-    { name: 'Dilnoza', city: 'Toshkent', months: 3, text: 'Ikkinchi oyning oxirida teri namligini sezdim — yuz kremi kamroq kerak bo‘lib qoldi. Ta’mi kakaoga o‘xshaydi, ertalab kofe o‘rniga ichaman.' },
-    { name: 'Madina', city: 'Samarqand', months: 2, text: 'Tirnoqlarim doim sinardi. Ikki oydan keyin sinishi to‘xtadi, soch to‘kilishi ham ancha kamaydi.' },
-    { name: 'Nilufar', city: 'Farg‘ona', months: 4, text: 'Oldin boshqa kollagen ichganman, ta’mi yoqmagan edi. Bunisi shokolad ta’mida — erim ham men bilan birga ichishni boshladi.' },
-    { name: 'Gulnora', city: 'Andijon', months: 3, text: '45 yoshdaman. Zinadan tushishda tizzam og‘rirdi, uchinchi oyda seziladigan darajada yengillashdi. Teri ham tarang.' },
-    { name: 'Sevara', city: 'Buxoro', months: 1, text: 'Operator qo‘ng‘iroq qilib hamma savolimga javob berdi, ertasi kuni yetkazib berishdi. Ta’mi yoqdi, endi natijani kutyapman.' },
-    { name: 'Kamola', city: 'Namangan', months: 2, text: 'Sochim yaltiroq bo‘ldi — sartaroshim ham “nima ishlatyapsiz” deb so‘radi.' }
-  ],
-
-  // Hero skroll-animatsiya (PNG kadrlar). Kadrlar public/frames/ ichida bo‘lsin.
-  // count: 0 — o‘chirilgan (statik rasm). Masalan: { count: 120, path: 'frames/frame_{i}.png', pad: 4 } → frames/frame_0001.png ...
-  heroFrames: { count: 0, path: 'frames/frame_{i}.png', pad: 4 }
+/* ===================== SOZLAMALAR ===================== */
+var CONFIG = {
+  leadEndpoint: '/api/lead',      // GitHub Pages'da: 'https://SIZNING-SERVER/api/lead'
+  phone:        '+998555004656',
+  phoneDisplay: '55 500 46 56',
+  instagram:    'https://instagram.com/sinolifeuz',
+  telegram:     'https://t.me/sinolife_manager',
+  productName:  'Sinolife Collagen 10 000 mg',
+  price:        '',               // '249 000' — bo'sh bo'lsa narx ko'rsatilmaydi
+  oldPrice:     '',               // '349 000'
+  priceTag:     '',               // 'Aksiya -30%'
+  pixelId:      ''                // Meta Pixel ID
 };
-/* ========================================================= */
-
+/* ====================================================== */
 (function () {
-  const $ = (s, r) => (r || document).querySelector(s);
-  const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
-  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  'use strict';
+  var d = document, w = window;
+  var each = function (sel, fn) { Array.prototype.forEach.call(d.querySelectorAll(sel), fn); };
 
-  /* Matnli sozlamalar */
-  $('#year').textContent = new Date().getFullYear();
-  $$('[data-callback]').forEach((el, i) => { if (i > 0) el.textContent = CONFIG.callbackText; });
-  $('#contacts').innerHTML =
-    `<a href="tel:${esc(CONFIG.phoneLink)}">${esc(CONFIG.phone)}</a>` +
-    (CONFIG.telegram ? `<a href="${esc(CONFIG.telegram)}" target="_blank" rel="noopener">Telegram</a>` : '') +
-    (CONFIG.instagram ? `<a href="${esc(CONFIG.instagram)}" target="_blank" rel="noopener">Instagram</a>` : '');
+  /* ---- kontaktlar ---- */
+  each('[data-phone]', function (el) { el.textContent = CONFIG.phoneDisplay; });
+  each('[data-tel]', function (el) { el.href = 'tel:' + CONFIG.phone.replace(/[^\d+]/g, ''); });
+  each('[data-ig]', function (el) { el.href = CONFIG.instagram; });
+  each('[data-tg]', function (el) { el.href = CONFIG.telegram; });
+  each('[data-year]', function (el) { el.textContent = new Date().getFullYear(); });
 
-  /* Nav fon */
-  const nav = $('#nav');
-  const onScroll = () => nav.classList.toggle('nav--solid', window.scrollY > 24);
-  onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
-
-  /* Videolar (YouTube facade: iframe faqat bosilganda yuklanadi) */
-  const playSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>';
-  $('#videos').innerHTML = CONFIG.videos.map((v) => {
-    const id = (v.id || '').trim();
-    if (!id) {
-      return `<div class="video video--empty" aria-label="${esc(v.title)}"><span class="video__play">${playSvg}</span><span class="video__title">${esc(v.title)} — tez kunda</span></div>`;
+  /* ---- narx ---- */
+  if (CONFIG.price) {
+    var box = d.querySelector('[data-price-box]');
+    if (box) {
+      box.hidden = false;
+      d.querySelector('[data-price]').textContent = CONFIG.price;
+      if (CONFIG.oldPrice) { var o = d.querySelector('[data-price-old]'); o.hidden = false; o.textContent = CONFIG.oldPrice + ' so\u2018m'; }
+      if (CONFIG.priceTag) { var t = d.querySelector('[data-price-tag]'); t.hidden = false; t.textContent = CONFIG.priceTag; }
+      var n = d.querySelector('[data-price-note]');
+      if (n) n.textContent = 'Yetkazish narxi va joriy aksiyani operator qo\u2018ng\u2018iroqda aniqlashtiradi.';
     }
-    return `<a class="video" href="https://www.youtube.com/watch?v=${esc(id)}" data-id="${esc(id)}" aria-label="${esc(v.title)} — videoni ko‘rish">
-      <img class="video__thumb" src="https://i.ytimg.com/vi/${esc(id)}/hqdefault.jpg" alt="" loading="lazy">
-      <span class="video__play">${playSvg}</span>
-      <span class="video__title">${esc(v.title)}</span></a>`;
-  }).join('');
-  $$('.video[data-id]').forEach((a) => a.addEventListener('click', (e) => {
-    e.preventDefault();
-    const id = a.dataset.id;
-    a.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${esc(id)}?autoplay=1&rel=0&playsinline=1" title="YouTube video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-    a.classList.add('video--playing');
-  }));
+  }
 
-  /* Mijozlar fikri */
-  const star = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.7 5.9 21.1l1.4-6.8L2.2 9.6l6.9-.8z"/></svg>';
-  $('#reviews').innerHTML = CONFIG.reviews.map((r) => `
-    <article class="review">
-      <div class="review__stars" aria-label="5 dan 5">${star.repeat(5)}</div>
-      <p class="review__text">${esc(r.text)}</p>
-      <div class="review__who">
-        <div class="review__avatar" aria-hidden="true">${esc(r.name.slice(0, 1))}</div>
-        <div><strong>${esc(r.name)}, ${esc(r.city)}</strong><span>${r.months} oydan beri ichmoqda</span></div>
-      </div>
-    </article>`).join('');
-
-  /* Telefon niqobi: +998 XX XXX XX XX */
-  const phone = $('#phone');
-  const digits = (v) => { let d = v.replace(/\D/g, ''); if (d.startsWith('998')) d = d.slice(3); return d.slice(0, 9); };
-  const format = (d) => {
-    let out = '+998';
-    if (d.length > 0) out += ' ' + d.slice(0, 2);
-    if (d.length > 2) out += ' ' + d.slice(2, 5);
-    if (d.length > 5) out += ' ' + d.slice(5, 7);
-    if (d.length > 7) out += ' ' + d.slice(7, 9);
-    return out;
-  };
-  phone.addEventListener('focus', () => { if (!phone.value) phone.value = '+998 '; });
-  phone.addEventListener('blur', () => { if (phone.value.trim() === '+998') phone.value = ''; });
-  phone.addEventListener('input', () => { phone.value = format(digits(phone.value)); phone.removeAttribute('aria-invalid'); });
-  phone.addEventListener('keydown', (e) => { if (e.key === 'Backspace' && phone.value.trim() === '+998') e.preventDefault(); });
-  $('#name').addEventListener('input', () => $('#name').removeAttribute('aria-invalid'));
-
-  /* UTM va sahifa ma’lumotlari */
-  const params = new URLSearchParams(location.search);
-  const utm = {};
-  ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach((k) => { if (params.get(k)) utm[k] = params.get(k); });
-  try { if (Object.keys(utm).length) sessionStorage.setItem('sl_utm', JSON.stringify(utm)); else Object.assign(utm, JSON.parse(sessionStorage.getItem('sl_utm') || '{}')); } catch (e) {}
-
-  /* Buyurtma yuborish */
-  const form = $('#leadForm'), btn = $('#submitBtn'), status = $('#formStatus');
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    status.classList.remove('form__status--show');
-    const name = $('#name').value.trim();
-    const d = digits(phone.value);
-    let ok = true;
-    if (name.length < 2) { $('#name').setAttribute('aria-invalid', 'true'); ok = false; }
-    if (d.length !== 9) { phone.setAttribute('aria-invalid', 'true'); ok = false; }
-    if (!ok) { (name.length < 2 ? $('#name') : phone).focus(); return; }
-
-    btn.disabled = true; btn.textContent = 'Yuborilmoqda…';
-    try {
-      const res = await fetch(CONFIG.leadEndpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name, phone: '+998' + d,
-          website: form.website.value,
-          page: location.href, referrer: document.referrer, ...utm
-        })
-      });
-      const data = await res.json().catch(() => ({}));
-      if (!res.ok || !data.ok) throw new Error(data.error || 'server');
-      form.style.display = 'none';
-      $('#successText').textContent = `Rahmat, ${name}! ${CONFIG.callbackText} Telefoningizni yoningizda tuting.`;
-      $('#success').classList.add('success--show');
-      $('#stickybar').classList.remove('stickybar--show');
-      if (window.fbq) fbq('track', 'Lead');
-      if (window.gtag) gtag('event', 'generate_lead');
-      if (window.ym && window.YM_ID) ym(window.YM_ID, 'reachGoal', 'lead');
-    } catch (err) {
-      status.textContent = `Yuborib bo‘lmadi. Internetni tekshirib qayta urinib ko‘ring yoki ${CONFIG.phone} raqamiga qo‘ng‘iroq qiling.`;
-      status.classList.add('form__status--show');
-      btn.disabled = false; btn.textContent = 'Buyurtma berish';
-    }
+  /* ---- telefon maskasi ---- */
+  function fmt(raw) {
+    var g = String(raw).replace(/\D/g, '');
+    if (g.indexOf('998') === 0) g = g.slice(3);
+    else if (g.indexOf('8') === 0 && g.length > 9) g = g.slice(1);
+    g = g.slice(0, 9);
+    var s = '+998';
+    if (g.length) s += ' ' + g.slice(0, 2);
+    if (g.length > 2) s += ' ' + g.slice(2, 5);
+    if (g.length > 5) s += ' ' + g.slice(5, 7);
+    if (g.length > 7) s += ' ' + g.slice(7, 9);
+    return s;
+  }
+  function digits(v) {
+    var g = String(v).replace(/\D/g, '');
+    if (g.indexOf('998') === 0) g = g.slice(3);
+    return g.slice(0, 9);
+  }
+  each('input[name="phone"]', function (i) {
+    i.addEventListener('focus', function () { if (!i.value) i.value = '+998 '; });
+    i.addEventListener('input', function () { i.value = fmt(i.value); i.setAttribute('aria-invalid', 'false'); });
+    i.addEventListener('blur', function () { if (digits(i.value).length === 0) i.value = ''; });
+  });
+  each('input[name="name"]', function (i) {
+    i.addEventListener('input', function () { i.setAttribute('aria-invalid', 'false'); });
   });
 
-  /* Mobil pastki tugma: hero o‘tgach ko‘rinadi, buyurtma bo‘limida yashirinadi */
-  const bar = $('#stickybar');
-  let pastHero = false, inOrder = false;
-  const update = () => bar.classList.toggle('stickybar--show', pastHero && !inOrder);
-  new IntersectionObserver(([en]) => { pastHero = !en.isIntersecting && en.boundingClientRect.bottom < 0; update(); }, { threshold: 0 }).observe($('#hero'));
-  new IntersectionObserver(([en]) => { inOrder = en.isIntersecting; update(); }, { threshold: .15 }).observe($('#buyurtma'));
+  /* ---- UTM ---- */
+  var qs = new URLSearchParams(location.search), TRACK = {};
+  ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid', 'gclid'].forEach(function (k) {
+    var v = qs.get(k);
+    if (v) { TRACK[k] = v; try { sessionStorage.setItem('t_' + k, v); } catch (e) {} }
+    else { try { var s = sessionStorage.getItem('t_' + k); if (s) TRACK[k] = s; } catch (e) {} }
+  });
 
-  /* Hero skroll-animatsiya (ixtiyoriy, PNG kadrlar) */
-  const hf = CONFIG.heroFrames;
-  if (hf && hf.count > 0) {
-    const hero = $('#hero'), canvas = $('#heroCanvas'), ctx = canvas.getContext('2d');
-    const content = $('#heroContent'), facts = $('#facts');
-    hero.classList.add('hero--frames'); canvas.hidden = false;
-    const frames = [];
-    let current = -1;
-    const src = (i) => hf.path.replace('{i}', String(i).padStart(hf.pad || 0, '0'));
-    const draw = (idx) => {
-      const img = frames[idx];
-      if (!img || !img.complete || !img.naturalWidth) return;
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
-      const w = canvas.clientWidth, h = canvas.clientHeight;
-      if (canvas.width !== Math.round(w * dpr) || canvas.height !== Math.round(h * dpr)) { canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr); }
-      const s = Math.max(w / img.naturalWidth, h / img.naturalHeight);
-      const dw = img.naturalWidth * s, dh = img.naturalHeight * s;
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      ctx.clearRect(0, 0, w, h);
-      ctx.drawImage(img, (w - dw) / 2, (h - dh) / 2, dw, dh);
-      current = idx;
+  /* ---- forma ---- */
+  each('form[data-lead]', function (form) {
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var wrap = form.closest('.lead');
+      var nI = form.querySelector('input[name="name"]');
+      var pI = form.querySelector('input[name="phone"]');
+      var btn = form.querySelector('button[type="submit"]');
+      var err = form.querySelector('.lead__err');
+      var name = nI.value.trim(), g = digits(pI.value), bad = null;
+
+      if (name.length < 2) { nI.setAttribute('aria-invalid', 'true'); bad = nI; }
+      if (g.length !== 9) { pI.setAttribute('aria-invalid', 'true'); bad = bad || pI; }
+      if (bad) { bad.focus(); return; }
+
+      wrap.classList.remove('is-error');
+      err.textContent = '';
+      btn.disabled = true;
+      var old = btn.textContent;
+      btn.textContent = 'Yuborilmoqda…';
+
+      var payload = {
+        name: name, phone: '998' + g,
+        product: CONFIG.productName,
+        place: form.getAttribute('data-place') || '',
+        page: location.href, referrer: d.referrer || '',
+        sent_at: new Date().toISOString()
+      };
+      Object.keys(TRACK).forEach(function (k) { payload[k] = TRACK[k]; });
+      var hp = form.querySelector('input[name="website"]');
+      if (hp && hp.value) payload.website = hp.value;
+
+      var ctrl = new AbortController();
+      var timer = setTimeout(function () { ctrl.abort(); }, 20000);
+
+      fetch(CONFIG.leadEndpoint, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload), signal: ctrl.signal
+      }).then(function (r) {
+        return r.json().catch(function () { return {}; }).then(function (data) {
+          if (!r.ok || data.ok === false) throw new Error(data.error || ('HTTP ' + r.status));
+          return data;
+        });
+      }).then(function () {
+        wrap.classList.add('is-done');
+        try { if (w.fbq) fbq('track', 'Lead'); } catch (e) {}
+        wrap.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }).catch(function () {
+        wrap.classList.add('is-error');
+        err.innerHTML = 'Yuborib bo\u2018lmadi. Iltimos, <a data-tel href="tel:' + CONFIG.phone + '"><b>' + CONFIG.phoneDisplay + '</b></a> raqamiga qo\u2018ng\u2018iroq qiling.';
+        btn.disabled = false; btn.textContent = old;
+      }).then(function () { clearTimeout(timer); });
+    });
+  });
+
+  /* ---- bitta uyg'un kirish animatsiyasi ---- */
+  var reduce = w.matchMedia && w.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if (!reduce && 'IntersectionObserver' in w) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: .12 });
+    each('[data-rise]', function (el) { io.observe(el); });
+    setTimeout(function () { each('[data-rise]', function (el) { el.classList.add('in'); }); }, 4000);
+  } else {
+    each('[data-rise]', function (el) { el.classList.add('in'); });
+  }
+
+  /* ---- yengil parallaks (data-par="0.06") ---- */
+  var pars = [].slice.call(d.querySelectorAll('[data-par]'));
+  if (pars.length && !reduce && w.innerWidth > 600) {
+    var tick = false;
+    var run = function () {
+      var vh = w.innerHeight;
+      pars.forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        var k = parseFloat(el.getAttribute('data-par')) || .06;
+        var off = (r.top + r.height / 2 - vh / 2) * -k;
+        el.style.transform = 'translate3d(0,' + off.toFixed(1) + 'px,0)';
+      });
+      tick = false;
     };
-    for (let i = 1; i <= hf.count; i++) {
-      const img = new Image(); img.src = src(i); frames.push(img);
-      if (i === 1) img.onload = () => draw(0);
-    }
-    const tick = () => {
-      const rect = hero.getBoundingClientRect();
-      const total = hero.offsetHeight - window.innerHeight;
-      const p = Math.min(1, Math.max(0, -rect.top / total));
-      const idx = Math.round(p * (hf.count - 1));
-      if (idx !== current) draw(idx);
-      const fade = Math.max(0, 1 - p * 3.2);
-      content.style.opacity = fade; facts.style.opacity = fade;
-      content.style.pointerEvents = fade < .2 ? 'none' : '';
-    };
-    window.addEventListener('scroll', () => requestAnimationFrame(tick), { passive: true });
-    window.addEventListener('resize', () => { current = -1; tick(); });
-    tick();
+    w.addEventListener('scroll', function () { if (!tick) { tick = true; requestAnimationFrame(run); } }, { passive: true });
+    run();
+  }
+
+  /* ---- Meta Pixel ---- */
+  if (CONFIG.pixelId) {
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = [];
+      t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(w, d, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', CONFIG.pixelId); fbq('track', 'PageView');
   }
 })();
+
 </script>
 </body>
 </html>
